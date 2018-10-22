@@ -1,0 +1,578 @@
+/* HOJA DE ESTILO CSS MENÚ - FUTBOLITIS
+ * Autor: Gastón Orellana C.
+ * Fecha: 08/12/2011 */
+ 
+	/* Propiedades para el cuerpo del sitio */
+    body {
+        background: url(../images/fondo.jpg) repeat top center #131009;
+        margin: 0px 0px 0px 0px;
+        font-family: Verdana, Arial, Helvetica;
+        font-size: 8pt;
+    }
+
+    /* Estilo para los vínculos en GENERAL */
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:active { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Estilos propios para los vínculos del login */
+    a.registrar { color: #ADD920; font-weight: bold; }
+    a.olvidar_pass { color: #CCCCCC; }
+    a.cerrar_sesion { color: #FFFFFF; }
+
+    /* Todo el contenido del sitio está dentro de este div */
+    #contenedor_div {
+        margin: 0px auto;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #000000;
+        width: 960px; /* Resolución mínima: 1024 x 768 */
+		background-color: #2e3525;
+    }
+
+    /* Contenedores sub-maestros, determinan las secciones del sitio */
+    #login_div { width: 100%; height: 30px; background-color: #000000; }
+	
+    #logo_menu_div {
+		width: 960px;
+	}
+	
+    #principal_div {
+		width: 960px;
+		background-color: #2e3525;
+	}
+	
+   #pie_div {
+		width: 960px;
+		height: 100px;
+		border-top: 2px dashed #DDDDDD;
+		margin-top: 15px;
+		background-color: #49553A;
+	}
+
+    /* Clases que sirven de espaciado específico para cualquier elemento */
+    .margen_5px_der { margin-right: 5px; }
+    .margen_5px_izq { margin-left: 5px; }
+
+
+
+
+
+
+
+
+
+
+    /* Contenedor de los elementos del login */
+    #form_login_div {
+        width: 270px;
+        height: 30px;
+        position: relative;
+        float: right;
+        right: 5px;
+    }
+
+    /* Contenedor del vínculo "¡Regístrate!" del LOGIN */
+    #registro_link_div {
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        float: right;
+        margin: 0 10px 0 10px;
+    }
+
+    /* Contenedor del vínculo "¿Olvidaste tu contraseña?" del LOGIN */
+    #olvida_pass_div {
+        height: 30px;
+        line-height: 30px;
+        position:relative;
+        float: right;
+    }
+
+    /* Contenedor del mensaje de error o estado de la acción de login */
+    #login_error_div {
+        display:none;
+        width: 270px;
+        color: #FFFFFF;
+        font-size: 8pt;
+        font-weight: bold;
+        position: absolute;
+        top: 30px;
+        left: 440px;
+        background: #FF0000;
+        padding-left: 10px;
+        line-height: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; /* CSS3 */
+
+
+    }
+
+    /* Botón "enviar" del login */
+    #enviar_btn {
+        height: 20px;
+        margin: auto;
+        border: 2px solid #AAAAAA;
+        background-color: #333333;
+        font-family: Verdana, Arial;
+        font-size: 10px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; /* Exclusivo CSS3 */
+    }
+
+    #enviar_btn:hover { background-color:#ADD920; }
+    #enviar_btn:active { background-color:#F0C900; }
+
+    #bienvenida_p {
+        height: 20px;
+        line-height: 20px;
+        display: none;
+        color: #FFFFFF;
+        position: relative;
+        float:right;
+        right: 10px;
+        top: 50%;
+        margin-top: -10px;
+        vertical-align: middle;
+        font-size: 8pt;
+    }
+
+
+    .input_form_login, .input_form_pass {
+        width: 100px;
+        height: 16px;
+        border-color: #CCCCCC;
+        border-style: dotted;
+        border-width: thin;
+        background-color: #333333;
+        font-size: xx-small;
+        font-family: Verdana, Arial, Helvetica;
+        color: #FFFFFF;
+    }
+
+    .float_left_login {
+        height: 30px;
+        position: relative;
+        float: left;
+        top: 5px;
+    }
+
+    .label_form_login {
+        color: #FFFFFF;
+        font-family: Verdana, Arial;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .nombre_usuario {
+        color: #ADD920;
+        font-weight: bold;
+    }
+
+    #maqueta_principal {
+        width: 940px;
+        height: 30px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    #seccion_menu {
+        width: 100%;
+        height: 30px;
+        background: #FF0000;
+    }
+
+    #seccion_left {
+        width: 600px;
+        background: #00FF00;
+    }
+
+    .lugar_hora_partido {
+        width: 400px;
+        height: auto;
+        background-color: #FF0000;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+	#imagen_div {
+		width: 120px;
+		height: 150px;
+		background-color: #FFFFFF;
+		text-align: center;
+	}
+	
+	#menu_x_div {
+        height: 100px;
+        line-height: 100px;
+        float: right;
+        font-family: Helvetica, Arial, Verdana;
+        font-size: 12pt;
+        font-weight: bold;
+        vertical-align:middle;
+    }
+
+    #menu_x_div ul {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+
+    #menu_x_div li {
+        float: left;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    
+
+     #logo_div {
+        width: 100px;
+        height: 100px;
+        background-color: #FF0000;
+        position: relative;
+        float: left;
+    }
+
+    .verde { background: #00FF00; }
+	
+	#reg_error_div {
+        font-family: Helvetica, Arial, Verdana;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+
+    #cuenta_usuario_div {
+        margin-bottom: 30px;
+    }
+
+    .label_registro {
+    }
+
+    .input_registro {
+    }
+
+    .reg_input {
+    }
+	
+	
+	/* PANEL DE COMENTARIOS PARA PARTIDO */
+	#panel_comentarios {
+		width: 250px;
+		height: 200px;
+		background-color: #FFFFFF;
+		border: 2px solid #000000;
+		padding:5px;
+	}
+	#panel_comentarios_inside {
+		width: 250px;
+		background-color: #FF0000;
+		text-align:left;
+		overflow: auto;
+		font-family: Verdana, Arial;
+		font-size: 7pt;
+	}
+
+	#btn_escribir_mensaje {
+		width: 250px;
+	}
+	#caja_mensaje {
+		width: 250px;
+	}
+	.error_comentario {
+		color:#FF0000;
+		font-style: italic;
+	}
+	.no_comentario {
+		color:#FF0000;
+		font-style: italic;
+		text-align:left;
+	}
+	.ok_comentario {
+		color:#00AA00;
+		font-style: italic;
+	}
+	.flood_comentario {
+		color:#FF0000;
+		font-style: italic;
+	}
+	.comentario_fila {
+		background-color: #EEEEEE;
+		padding: 2px;
+		margin: 1px;
+	}
+	
+	/* RÁNKING */
+	.destacar_fila_rank {
+		background-color: #FF0000;
+		color: #FFFFFF;
+	}
+	.fila_rank {
+		background-color: #FFFFFF;
+		color: #000000;
+	}
+	
+	/* RESULTADOS ANTERIORES */
+	.sobre_div:hover {
+		background-color: #CCCCCC;
+		cursor: pointer;
+	}
+	
+	/* BOX DE NOTICIAS */
+	#cajaNews {
+		width: 200px;
+		height: 300px;
+		margin-top: 20px;
+		background-color: #EAF4F5;
+		font-family: Helvetica, Arial;
+		font-size: 12px;
+	}
+	#caja_news ul {
+		list-style: none;
+	}
+	
+	.more_info {
+		text-align: right;
+		position: relative;
+		float: right;
+		font-size: 8pt;
+		font-family: Arial;
+		cursor: pointer;
+	}
+	.more_fecha {
+		text-align: right;
+		position: relative;
+		float: left;
+		font-size: 8pt;
+		font-family: Arial;
+		font-style: italic;
+	}
+	.more_titulo {
+		text-align: left;
+		font-size: 10pt;
+		font-family: Arial;
+		font-weight: bold;
+	}
+	.more_resumen {
+		text-align: left;
+		font-size: 9pt;
+		font-family: Arial;
+	}
+	
+	
+	#s3slider { 
+   width: 400px; /* important to be same as image width */ 
+   height: 300px; /* important to be same as image height */
+   position: relative; /* important */
+   overflow: hidden; /* important */
+	}
+
+	#s3sliderContent {
+	   width: 400px; /* important to be same as image width or wider */
+	   position: absolute; /* important */
+	   top: 0; /* important */
+	   margin-left: 0; /* important */
+	}
+
+	.s3sliderImage {
+	   float: left; /* important */
+	   position: relative; /* important */
+	   display: none; /* important */
+	}
+
+	.s3sliderImage span {
+	   position: absolute; /* important */
+	   left: 0;
+	   font: 10px/15px Arial, Helvetica, sans-serif;
+	   padding: 10px 13px;
+	   width: 374px;
+	   background-color: #000;
+	   filter: alpha(opacity=70); /* here you can set the opacity of box with text */
+	   -moz-opacity: 0.7; /* here you can set the opacity of box with text */
+	   -khtml-opacity: 0.7; /* here you can set the opacity of box with text */
+	   opacity: 0.7; /* here you can set the opacity of box with text */
+	   color: #fff;
+	   display: none; /* important */
+	   top: 0;
+
+	   /*
+		   if you put
+		   top: 0; -> the box with text will be shown at the top of the image 
+		   if you put
+		   bottom: 0; -> the box with text will be shown at the bottom of the image
+	   */
+	}
+
+	
+
+	#contenidoCentro {
+		width: 920px;
+		margin: 20px auto 0px auto;
+		overflow: hidden;
+		height: 1%;
+	}
+	
+	
+
+	
+	/* Caja de estadísticas */
+	#cajaEstad {
+		width: 200px;
+		height: 100px;
+	}
+	
+	#cajaFb {
+		width: 200px;
+	}
+	
+	#medioCont {
+		width: 494px; /* 6 pixeles menos por los bordes de las cajas */
+		margin-left: 10px;
+		margin-right: 10px;
+		background-color: #FFFFFF;
+	}
+	
+	
+	.lineaPartidoSemana {
+		margin: 10px;
+		background-color: #d5fea0;
+		text-align: center;
+		width: 460px;
+	}
+	
+	.lineaPartidoSemanaInside {
+		margin: 20px auto 20px auto;
+		width: 460px;
+	}
+	
+	.ladoVs {
+		width: 210px;
+		font-family: Verdana, Arial, Helvetica;
+		font-size: 14pt;
+		font-weight: bold;
+	}
+	.ladoVs.izquierda {
+		float: left;
+	}
+	.ladoVs.derecha {
+		float: right;
+	}
+	.centrarVs {
+		float:left;
+		width: 40px;
+	}
+	
+	.abajoVs {
+		color: #FFFFFF;
+		font-family: Verdana, Helvetica;
+		font-size:8pt;
+		font-weight: bold;
+		color: #0c3502;
+		/*background-color: #406d0c;*/
+		border-top: 1px dotted #000000;
+	}
+	
+	/* NOTICIA PRINCIPAL */
+	.noticiaCont {
+		width: 920px;
+		height: 230px;
+		background-color: #000000;
+		margin: 0 auto 0 auto;
+	}
+	.noticiaImag {
+		position:absolute;
+	}
+	.noticiaCaja {
+		width: 920px;
+		height: 50px;
+		margin-top: 180px;
+		background-color: transparent;
+		position: absolute;
+		z-index: 2;
+	}
+	.noticiaCaja .titulo {
+		font: bold 16pt Helvetica;
+		color: #80CA17;
+		padding-left: 5px;
+	}
+	.noticiaCaja .cuerpo {
+		font: bold 12pt Helvetica;
+		color: #FFFFFF;
+		padding-left: 5px;
+	}
+	
+	.noticiaCajaFondo {
+		width: 920px;
+		height: 50px;
+		margin-top: 180px;
+		background-color: #000000;
+		position: absolute;
+		z-index: 1;
+	}
+
+	
+	.bordesCaja {
+		border: 1px dotted #4bb30d;
+		background-color: #eaffcf;
+	}
+	
+	
+	
+	.estadLabel {
+		width: 130px;
+		float: left;
+		font: bold 10pt Helvetica, Arial;
+		color: #000000;
+		text-align: left;
+		margin-left: 10px;
+	}
+	
+	.estadValor {
+		width: 50px;
+		float: right;
+		font: bold 10pt Helvetica, Arial;
+		color: #1D5900;
+		text-align: right;
+		margin-right: 10px;
+	}
+	.estadCont {
+		padding-top: 10px;
+	}
+	
+	/* CLASES COMUNES PARA CUALQUIER ELEMENTO */
+	.izquierda { float: left; }
+	.derecha { float: right; }
+	.clear { clear: both; }
+	
+	.trans {
+		opacity: 0.4;
+		filter:alpha(opacity=40);
+	}
+	
+	.gradiente-verde-negro {
+        background: #111d00; /* Old browsers */
+        background: -moz-linear-gradient(top,  #111d00 0%, #000000 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111d00), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #111d00 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #111d00 0%,#000000 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #111d00 0%,#000000 100%); /* IE10+ */
+        background: linear-gradient(top,  #111d00 0%,#000000 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111d00', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		
+		height: 30px;
+		font-size: 10pt;
+		font-weight: bold;
+		color: #FFFFFF;
+		font-family: Arial;
+		
+		vertical-align: middle;
+		line-height: 30px;
+		
+		text-align: center;
+    }
+	
